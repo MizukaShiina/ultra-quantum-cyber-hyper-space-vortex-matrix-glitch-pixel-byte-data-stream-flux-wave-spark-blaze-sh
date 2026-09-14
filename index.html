@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer Socials</title>
+    <meta name="description" content="Connect with all official social media platforms and streams.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Subtle Background Elements -->
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <main class="container">
+        <!-- Header / Profile Section -->
+        <header class="profile">
+            <div class="avatar-wrapper">
+                <img id="profile-avatar" src="" alt="" class="avatar">
+                <div class="avatar-ring"></div>
+            </div>
+            <h1 id="profile-name" class="profile-name"></h1>
+            <p id="profile-handle" class="profile-handle"></p>
+            <p id="profile-bio" class="profile-bio"></p>
+        </header>
+
+        <!-- Dynamic Social Cards Container -->
+        <section class="social-links" id="social-links" aria-label="Social Media Links">
+            <!-- Cards will be generated dynamically by script.js -->
+        </section>
+
+        <!-- Action Tools (Share / Copy Link) -->
+        <div class="action-bar">
+            <button id="copy-link-btn" class="action-btn" aria-label="Copy page link">
+                <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                <span id="copy-text">Copy Link</span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
