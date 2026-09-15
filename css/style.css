@@ -333,6 +333,26 @@ body {
     transform: translate(2px, -2px);
 }
 
+/* OAuth Connect Button (Discord account-link flow only) */
+/* Visually distinct: outlined variant using the platform accent. */
+.cta-button.oauth-connect {
+    background: transparent;
+    color: var(--platform-accent);
+    border: 1px solid var(--platform-accent);
+    box-shadow: none;
+}
+
+/* Keep the Connect button readable on light accents (e.g. Twitter / X) */
+.card[data-platform="Twitter / X"] .cta-button.oauth-connect {
+    color: #000000;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-button.oauth-connect:hover {
+    background: var(--platform-accent-alpha);
+    box-shadow: 0 4px 14px var(--platform-accent-alpha);
+}
+
 /* Expanded Card State Styling */
 .card.expanded {
     border-color: var(--platform-accent);
