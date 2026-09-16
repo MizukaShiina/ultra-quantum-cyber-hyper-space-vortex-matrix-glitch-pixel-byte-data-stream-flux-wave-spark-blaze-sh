@@ -1,0 +1,303 @@
+/* ==========================================================================
+   Variables & Theme — tokens reused verbatim from the linktree
+   ========================================================================== */
+:root {
+    /* Main Theme */
+    --bg-dark: #0a0b0e;
+    --card-bg: rgba(22, 25, 35, 0.75);
+    --card-bg-hover: rgba(30, 34, 48, 0.85);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+
+    /* Status accents (overridden per-status below) */
+    --status-accent: #9ca3af;
+    --status-accent-alpha: rgba(156, 163, 175, 0.18);
+
+    /* Typography */
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Layout */
+    --max-width: 460px;
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --radius-sm: 8px;
+
+    /* Animation */
+    --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1.25rem;
+    position: relative;
+    overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Background Visual Effects — identical to linktree */
+.bg-glow {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(145, 70, 255, 0.12) 0%, rgba(88, 101, 242, 0.05) 45%, rgba(0, 0, 0, 0) 70%);
+    z-index: -2;
+    pointer-events: none;
+}
+
+.bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 32px 32px;
+    z-index: -1;
+    pointer-events: none;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+}
+
+/* Tint the background glow with the status color */
+body[data-status="success"] .bg-glow {
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.14) 0%, rgba(34, 197, 94, 0.04) 45%, rgba(0, 0, 0, 0) 70%);
+}
+
+body[data-status="error"] .bg-glow {
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.14) 0%, rgba(239, 68, 68, 0.04) 45%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ==========================================================================
+   Result Card
+   ========================================================================== */
+.result-card {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 1.75rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+/* Status accents */
+.result-card[data-status="success"] {
+    --status-accent: #22c55e;
+    --status-accent-alpha: rgba(34, 197, 94, 0.18);
+    border-color: rgba(34, 197, 94, 0.35);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(34, 197, 94, 0.12);
+}
+
+.result-card[data-status="error"] {
+    --status-accent: #ef4444;
+    --status-accent-alpha: rgba(239, 68, 68, 0.18);
+    border-color: rgba(239, 68, 68, 0.35);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(239, 68, 68, 0.12);
+}
+
+/* ==========================================================================
+   Icon, Ring & Status Badge
+   ========================================================================== */
+.icon-wrapper {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 0.5rem;
+}
+
+.icon-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--status-accent), rgba(145, 70, 255, 0.6));
+    z-index: 1;
+    opacity: 0.6;
+    filter: blur(8px);
+    transition: var(--transition-smooth);
+}
+
+.result-card[data-status="success"] .icon-ring,
+.result-card[data-status="error"] .icon-ring {
+    opacity: 0.85;
+}
+
+.icon-plate {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--card-bg-hover);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Platform icon injected by script.js */
+.icon-plate svg {
+    width: 46px;
+    height: 46px;
+    fill: var(--platform-accent, var(--text-secondary));
+}
+
+/* Light-accent platforms (Twitter / X) invert the plate for readability */
+.icon-plate[data-light="true"] {
+    background: #f3f4f6;
+}
+
+.icon-plate[data-light="true"] svg {
+    fill: #000000;
+}
+
+/* Small check/cross/info badge pinned on the plate */
+.status-badge {
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 3;
+    background: var(--status-accent);
+    color: #0a0b0e;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--bg-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.badge-icon {
+    display: none;
+    width: 14px;
+    height: 14px;
+}
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+.result-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.result-message {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    max-width: 34ch;
+    margin-inline: auto;
+}
+
+/* ==========================================================================
+   Action Button
+   ========================================================================== */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 0.7rem 1.4rem;
+    background: var(--status-accent);
+    color: #ffffff;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 700;
+    transition: var(--transition-fast);
+    box-shadow: 0 4px 14px var(--status-accent-alpha);
+}
+
+/* Green/red read fine with white text; the neutral grey does not */
+.result-card[data-status="neutral"] .action-btn {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
+    border: 1px solid var(--card-border);
+}
+
+.action-btn:hover {
+    filter: brightness(1.12);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px var(--status-accent-alpha);
+}
+
+.action-btn:focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+}
+
+.action-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.action-btn:hover .action-icon {
+    transform: translateX(-2px);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 2rem;
+    max-width: 42ch;
+}
+
+/* ==========================================================================
+   Accessibility & Reduced Motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Result</title>
+    <meta name="description" content="Result of your account linking attempt.">
+    <meta name="robots" content="noindex">
+
+    <!-- Google Fonts (same as linktree) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Subtle Background Elements (same as linktree) -->
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <main class="container">
+        <section class="result-card" id="result-card" data-status="neutral">
+            <!-- Platform icon -->
+            <div class="icon-wrapper">
+                <div class="icon-ring"></div>
+                <div class="icon-plate" id="platform-icon" aria-hidden="true"></div>
+                <div class="status-badge" id="status-badge" aria-hidden="true">
+                    <svg class="badge-icon" id="badge-success" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    <svg class="badge-icon" id="badge-error" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6L6 18"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                    <svg class="badge-icon" id="badge-neutral" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 8v4"></path>
+                        <path d="M12 16h.01"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Adaptive text -->
+            <h1 id="result-title" class="result-title">Processing&hellip;</h1>
+            <p id="result-message" class="result-message">
+                If this page does not update, you can safely close this tab.
+            </p>
+
+            <!-- Single action button -->
+            <a id="action-btn" class="action-btn" href="../">
+                <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 14l-4-4 4-4"></path>
+                    <path d="M5 10h11a4 4 0 0 1 0 8h-1"></path>
+                </svg>
+                <span id="action-text">Return to portal</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>This page shows the result of an account-linking attempt. Nothing else is stored here.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

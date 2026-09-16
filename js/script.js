@@ -66,10 +66,10 @@ const streamerConfig = {
             // get the "Connect Account" button (shown when ?state= is present).
             oauth: {
                 enabled: true,
-                clientId: "PUBLIC_CLIENT_ID",
-                authorizeUrl: "OAUTH_AUTHORIZE_URL",
-                redirectUri: "REGISTERED_REDIRECT_URI",
-                scope: "REQUESTED_SCOPES"
+                clientId: "676926884798-ie0gaqghec0rlcjvmcv4cin8rn1gih4f.apps.googleusercontent.com",
+                authorizeUrl: "https://accounts.google.com/o/oauth2/v2/auth",
+                redirectUri: "https://calcium-admission-auckland-block.trycloudflare.com/oauth/youtube/callback",
+                scope: "https://www.googleapis.com/auth/youtube.readonly",
 
                 // Optional: override/add provider-specific OAuth parameters.
                 // Standard params (response_type, client_id, redirect_uri,
@@ -78,6 +78,11 @@ const streamerConfig = {
                 //     response_type: "token",
                 //     prompt: "consent"
                 // }
+                params: {
+                    access_type: "offline",
+                    include_granted_scopes: "true",
+                    prompt: "consent"
+                }
             },
 
             iconSvg: `<svg class="platform-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`
