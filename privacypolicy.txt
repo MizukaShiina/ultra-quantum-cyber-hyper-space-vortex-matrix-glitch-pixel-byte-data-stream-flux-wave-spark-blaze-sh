@@ -1,0 +1,104 @@
+# MizuBot Privacy Policy
+
+**Last Updated:** [DATE]
+
+MizuBot ("MizuBot", "we", "us", or "our") provides tools and services that allow users to connect supported accounts and use features provided through MizuBot.
+
+This Privacy Policy explains what information we access, how we use it, how we store it, and how users can request deletion.
+
+## 1. Information We Access
+
+When you choose to connect your YouTube account to MizuBot through Google OAuth, we may receive information associated with your authorized YouTube account, including:
+
+* Your YouTube channel/account identifier.
+* Information returned by the YouTube API that is necessary to provide the requested MizuBot feature.
+* OAuth authentication tokens, including access tokens and, where provided, refresh tokens.
+* Token expiration information.
+
+We do not request or store your Google Account password.
+
+## 2. How We Use YouTube Data
+
+We use the information obtained through YouTube API Services only to provide the features for which you authorized access.
+
+For example, MizuBot may use your YouTube account information to:
+
+* Identify the YouTube account you connected.
+* Check whether your account is subscribed to a specified YouTube channel.
+* Perform later authorized YouTube API lookups without requiring you to authorize the same account every time.
+
+OAuth tokens are stored so that MizuBot can maintain the authorized connection and obtain updated access when necessary.
+
+We do not use your YouTube data for advertising, selling personal information, or unrelated profiling.
+
+## 3. Storage and Security
+
+We take reasonable technical and organizational measures to protect stored account information and OAuth credentials from unauthorized access, use, or disclosure.
+
+OAuth credentials are treated as sensitive information and are not intentionally made publicly accessible.
+
+However, no method of electronic storage or transmission can be guaranteed to be completely secure.
+
+## 4. Sharing of Information
+
+We do not sell your YouTube information.
+
+We do not intentionally share your OAuth credentials or YouTube account information with unrelated third parties.
+
+Information may be processed through Google and the YouTube API as part of the account authorization and API functionality.
+
+Our use of YouTube API Services is also subject to Google's and YouTube's applicable policies.
+
+## 5. Data Retention
+
+We retain YouTube account information and OAuth credentials only for as long as they are reasonably necessary to provide the associated MizuBot functionality or to maintain an authorized account connection.
+
+If you disconnect your YouTube account or request deletion of your stored data, we will remove the associated information within a reasonable period, subject to legitimate technical, security, or legal requirements.
+
+## 6. Disconnecting Your Account
+
+You may revoke MizuBot's access to your Google account through your Google Account security settings.
+
+You may also contact us to request deletion of the YouTube account information and OAuth credentials associated with your MizuBot connection.
+
+Google account permissions can also be managed through Google's account security controls:
+
+https://security.google.com/settings/security/permissions
+
+## 7. Data Deletion Requests
+
+To request deletion of information associated with your connected YouTube account, contact us at:
+
+**Email:** mizukashiinaa@gmail.com
+
+Please include enough information for us to identify the account or connection that should be removed.
+
+YouTube API policies require us to provide users with a straightforward way to request deletion of their data.
+
+## 8. Third-Party Services
+
+MizuBot uses Google OAuth and YouTube API Services.
+
+Your use of Google and YouTube is also subject to Google's applicable policies and YouTube's Terms of Service.
+
+Google Privacy Policy:
+
+https://policies.google.com/privacy
+
+YouTube Terms of Service:
+
+https://www.youtube.com/t/terms
+
+## 9. Changes to This Privacy Policy
+
+We may update this Privacy Policy when our services or data practices change.
+
+If we make material changes to how we access, use, or store Google or YouTube user data, we will update this policy before using that data for the new purpose where required.
+
+## 10. Contact
+
+If you have questions about this Privacy Policy or how MizuBot handles your data, contact:
+
+**Email:** mizukashiinaa@gmail.com
+
+**Website:** https://links.mizu.asia/

@@ -1,0 +1,105 @@
+# MizuBot Terms of Service
+
+**Last Updated:** [DATE]
+
+These Terms of Service ("Terms") govern your use of MizuBot ("MizuBot", "we", "us", or "our").
+
+By using MizuBot or connecting an account to MizuBot, you agree to these Terms.
+
+## 1. Use of MizuBot
+
+MizuBot provides account-linking and related features that may interact with third-party services such as YouTube.
+
+You agree to use MizuBot only for lawful purposes and in accordance with these Terms.
+
+## 2. Account Connections
+
+Some MizuBot features may require you to connect a third-party account.
+
+When you connect an account, you authorize MizuBot to access the information and functionality permitted by the authorization you grant.
+
+You are responsible for ensuring that you have the right to authorize the account you connect.
+
+You must not attempt to connect, access, or control another person's account without their authorization.
+
+## 3. YouTube
+
+MizuBot uses YouTube API Services for certain features.
+
+By using MizuBot features that interact with YouTube, you also agree to be bound by the YouTube Terms of Service:
+
+https://www.youtube.com/t/terms
+
+You also acknowledge that your use of YouTube remains subject to Google's and YouTube's own policies and terms.
+
+## 4. OAuth Authorization
+
+MizuBot uses OAuth authorization to connect supported accounts.
+
+MizuBot does not request or store your Google Account password.
+
+You may revoke MizuBot's authorization through your Google Account security settings at any time.
+
+Revoking authorization may cause features that depend on the connection to stop working.
+
+## 5. Rewards and Verification
+
+Certain MizuBot features may require verification of an account or activity on a supported third-party platform.
+
+Verification results may be used to determine whether a user qualifies for a particular MizuBot feature or reward.
+
+MizuBot does not guarantee that a particular reward, role, access level, or other benefit will always be available.
+
+We may reject or invalidate a verification when the required conditions are not met or when the verification cannot be completed reliably.
+
+## 6. Prohibited Use
+
+You agree not to:
+
+* Attempt to gain unauthorized access to MizuBot or connected accounts.
+* Impersonate another person.
+* Abuse, exploit, or intentionally interfere with MizuBot.
+* Attempt to bypass verification or eligibility requirements.
+* Use MizuBot for unlawful purposes.
+* Attempt to obtain rewards or access through fraudulent means.
+* Interfere with the operation of third-party services used by MizuBot.
+
+## 7. Third-Party Services
+
+MizuBot may depend on third-party services, including Google, YouTube, Discord, Twitch, or other platforms.
+
+We are not responsible for outages, changes, restrictions, API changes, account actions, or other issues caused by third-party services.
+
+Third-party services are governed by their own terms and policies.
+
+## 8. Availability
+
+MizuBot is provided on an "as available" basis.
+
+Features may be changed, suspended, or discontinued when necessary, including when a third-party service changes its API, policies, or availability.
+
+## 9. Termination
+
+We may suspend or terminate access to MizuBot features when reasonably necessary, including in cases of abuse, fraud, unauthorized access attempts, or violations of these Terms.
+
+You may stop using MizuBot or revoke connected account authorization at any time.
+
+## 10. Privacy
+
+Our handling of personal information and connected account data is described in our Privacy Policy:
+
+https://links.mizu.asia/privacy
+
+## 11. Changes to These Terms
+
+We may update these Terms when MizuBot's functionality or requirements change.
+
+Continued use of MizuBot after updated Terms are published constitutes acceptance of the updated Terms where permitted by applicable law.
+
+## 12. Contact
+
+If you have questions regarding these Terms, contact:
+
+**Email:** mizukashiinaa@gmail.com
+
+**Website:** https://links.mizu.asia/
