@@ -68,7 +68,7 @@ const streamerConfig = {
                 enabled: true,
                 clientId: "676926884798-ie0gaqghec0rlcjvmcv4cin8rn1gih4f.apps.googleusercontent.com",
                 authorizeUrl: "https://accounts.google.com/o/oauth2/v2/auth",
-                redirectUri: "https://calcium-admission-auckland-block.trycloudflare.com/oauth/youtube/callback",
+                redirectUri: "https://oauth.mizu.asia/oauth/youtube/callback",
                 scope: "https://www.googleapis.com/auth/youtube.readonly",
 
                 // Optional: override/add provider-specific OAuth parameters.
