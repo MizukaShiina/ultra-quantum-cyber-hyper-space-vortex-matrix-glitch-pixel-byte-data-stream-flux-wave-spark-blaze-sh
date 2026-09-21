@@ -9,7 +9,7 @@
 const streamerConfig = {
     name: "Drinst",
     handle: "@Drinst",
-    bio: "Bio here",
+    bio: "Streamer, creator. Find all of my official social links and community spaces below.",
     avatarUrl: "./assets/profile.jpg",
 
     socialLinks: [

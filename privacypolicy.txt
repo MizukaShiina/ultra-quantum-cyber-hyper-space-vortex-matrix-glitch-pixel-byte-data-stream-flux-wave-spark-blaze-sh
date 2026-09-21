@@ -1,0 +1,94 @@
+# MizuBot Privacy Policy
+
+**Last Updated:** [DATE]
+
+MizuBot ("MizuBot", "we", "us", or "our") provides tools and services that allow users to connect supported accounts and use features provided through MizuBot.
+
+This Privacy Policy explains what information we access, how we use it, how we store it, and how users can request deletion.
+
+## 1. Information We Access
+
+When you choose to connect an account from a supported third-party platform to MizuBot, we may receive information associated with that authorized account, including:
+
+* Your account or profile identifier on the connected platform.
+* Information returned by the platform's API that is necessary to provide the requested MizuBot feature.
+* OAuth authentication tokens, including access tokens and, where provided, refresh tokens.
+* Token expiration information.
+
+We do not request or store your password for any connected platform.
+
+## 2. How We Use Connected Account Data
+
+We use information obtained from a connected platform only to provide the features for which you authorized access.
+
+Depending on the platform and feature, MizuBot may use connected account information to:
+
+* Identify the account you connected.
+* Check account status, eligibility, or activity required by a MizuBot feature.
+* Perform later authorized API lookups without requiring you to authorize the same account every time.
+
+OAuth tokens are stored so that MizuBot can maintain the authorized connection and obtain updated access when permitted and necessary.
+
+We do not use connected account data for advertising, selling personal information, or unrelated profiling.
+
+## 3. Storage and Security
+
+We take reasonable technical and organizational measures to protect stored account information and OAuth credentials from unauthorized access, use, or disclosure.
+
+OAuth credentials are treated as sensitive information and are not intentionally made publicly accessible.
+
+However, no method of electronic storage or transmission can be guaranteed to be completely secure.
+
+## 4. Sharing of Information
+
+We do not sell your connected account information.
+
+We do not intentionally share your OAuth credentials or connected account information with unrelated third parties.
+
+Information may be processed through the relevant third-party platform and its API as part of account authorization and feature functionality.
+
+Each platform may have its own privacy policy, terms, and data practices that apply to your use of that platform.
+
+## 5. Data Retention
+
+We retain connected account information and OAuth credentials only for as long as they are reasonably necessary to provide the associated MizuBot functionality or to maintain an authorized account connection.
+
+If you disconnect an account or request deletion of your stored data, we will remove the associated information within a reasonable period, subject to legitimate technical, security, or legal requirements.
+
+## 6. Disconnecting Your Account
+
+You may revoke MizuBot's access through the connected platform's account or authorization settings, where available.
+
+You may also contact us to request deletion of the account information and OAuth credentials associated with your MizuBot connection.
+
+## 7. Data Deletion Requests
+
+To request deletion of information associated with a connected account, contact us at:
+
+**Email:** [CONTACT EMAIL]
+
+Please include enough information for us to identify the account or connection that should be removed.
+
+We will review and process deletion requests in accordance with applicable law and the requirements of the relevant platform.
+
+## 8. Third-Party Services
+
+MizuBot may use OAuth, APIs, and other integrations provided by third-party platforms, which may include Google, YouTube, Discord, Twitch, or other services.
+
+Your use of each third-party platform is subject to that platform's own terms, privacy policy, and other applicable policies.
+
+Where a specific MizuBot feature uses a particular platform, we may provide links to that platform's applicable policies.
+
+## 9. Changes to This Privacy Policy
+
+We may update this Privacy Policy when our services or data practices change.
+
+If we make material changes to how we access, use, or store connected account data, we will update this policy before using that data for the new purpose where required.
+
+## 10. Contact
+
+If you have questions about this Privacy Policy or how MizuBot handles your data, contact:
+
+**Email:** [CONTACT EMAIL]
+
+**Website:** https://links.mizu.asia/
