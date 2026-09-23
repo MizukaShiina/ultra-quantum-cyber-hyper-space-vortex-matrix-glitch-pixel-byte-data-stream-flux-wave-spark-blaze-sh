@@ -102,7 +102,7 @@ const streamerConfig = {
                 enabled: true,
                 authorizeUrl: "https://www.tiktok.com/v2/auth/authorize/",
                 redirectUri: "https://oauth.mizu.asia/oauth/tiktok/callback",
-                scope: "user.info.basic, user.info.profile, user.info.stats",
+                scope: "user.info.basic,user.info.profile,user.info.stats",
                 params: {
                     client_key: "sbawchpivkfn53pujl"
                 }
