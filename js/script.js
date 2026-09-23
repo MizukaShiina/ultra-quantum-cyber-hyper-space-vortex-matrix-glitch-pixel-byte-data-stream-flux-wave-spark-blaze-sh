@@ -100,13 +100,11 @@ const streamerConfig = {
             // client_key is supplied through `params`.
             oauth: {
                 enabled: true,
-                clientId: "PUBLIC_CLIENT_KEY", // -> your TikTok Client Key
                 authorizeUrl: "https://www.tiktok.com/v2/auth/authorize/",
-                redirectUri: "REGISTERED_REDIRECT_URI",
+                redirectUri: "https://oauth.mizu.asia/oauth/tiktok/callback",
                 scope: "user.info.basic",
                 params: {
-                    client_id: null,      // TikTok does not use client_id
-                    client_key: "PUBLIC_CLIENT_KEY"
+                    client_key: "sbawchpivkfn53pujl"
                 }
             },
 
