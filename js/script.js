@@ -21,18 +21,6 @@ const streamerConfig = {
             buttonText: "Watch Live on Twitch",
             url: "https://www.twitch.tv/drinst",
 
-            // Twitch OAuth (Helix / Identity)
-            oauth: {
-                enabled: true,
-                clientId: "PUBLIC_CLIENT_ID", // -> your Twitch Client ID
-                authorizeUrl: "https://id.twitch.tv/oauth2/authorize",
-                redirectUri: "REGISTERED_REDIRECT_URI",
-                scope: "user:read:email"
-
-                // Optional provider-specific params, e.g.:
-                // params: { claims: '{"id_token":{"email":null}}' }
-            },
-
             iconSvg: `<svg class="platform-icon" viewBox="0 0 24 24"><path d="M11.571 4.714h1.715v5.143H11.57V4.714zm4.715 0H18v5.143h-1.714V4.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0H6zm14.571 11.143l-3.428 3.429h-3.429l-3 3v-3H6.857V1.714h13.714v9.429z"/></svg>`
         },
         {
@@ -42,15 +30,6 @@ const streamerConfig = {
             description: "Join our vibrant Discord server to chat off-stream, share memes, and get event news.",
             buttonText: "Join Discord Community",
             url: "https://discord.gg/ZYWJ2JptFb",
-
-            // Discord OAuth2
-            oauth: {
-                enabled: true,
-                clientId: "PUBLIC_CLIENT_ID", // -> your Discord Application ID
-                authorizeUrl: "https://discord.com/oauth2/authorize",
-                redirectUri: "REGISTERED_REDIRECT_URI",
-                scope: "identify"
-            },
 
             iconSvg: `<svg class="platform-icon" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>`
         },
@@ -118,12 +97,11 @@ const streamerConfig = {
             buttonText: "Follow on Instagram",
             url: "https://www.instagram.com/",
 
-            // Instagram OAuth (Instagram API with Instagram Login)
             oauth: {
                 enabled: true,
-                clientId: "PUBLIC_CLIENT_ID", // -> your Instagram App ID
+                clientId: "1605971464587054",
                 authorizeUrl: "https://www.instagram.com/oauth/authorize",
-                redirectUri: "REGISTERED_REDIRECT_URI",
+                redirectUri: "https://oauth.mizu.asia/oauth/instagram/callback",
                 scope: "instagram_business_basic"
             },
 
@@ -175,6 +153,8 @@ function getOAuthState() {
 
 function shouldShowConnectButton(platform, state) {
     return Boolean(state)
+        && platform.name !== "Twitch"
+        && platform.name !== "Discord"
         && Boolean(platform.oauth)
         && platform.oauth.enabled === true;
 }
