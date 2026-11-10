@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MizuBot Link Hub — style.css
+   DrinstBot Link Hub — style.css
    ==========================================================================
    🎨 GLOBAL THEME COLOR
    Change the single --theme value below and the whole page re-colors
@@ -190,7 +190,7 @@ body {
 }
 
 /* ==========================================================================
-   MizuBot brand badge (kept visible for app/branding verification)
+   DrinstBot brand badge (kept visible for app/branding verification)
    ========================================================================== */
 .brand-intro {
     display: flex;

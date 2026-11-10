@@ -1,22 +1,22 @@
-# MizuBot Terms of Service
+# DrinstBot Terms of Service
 
 **Last Updated:** [DATE]
 
-These Terms of Service ("Terms") govern your use of MizuBot ("MizuBot", "we", "us", or "our").
+These Terms of Service ("Terms") govern your use of DrinstBot ("DrinstBot", "we", "us", or "our").
 
-By using MizuBot or connecting an account to MizuBot, you agree to these Terms.
+By using DrinstBot or connecting an account to DrinstBot, you agree to these Terms.
 
-## 1. Use of MizuBot
+## 1. Use of DrinstBot
 
-MizuBot provides account-linking and related features that may interact with third-party platforms and services.
+DrinstBot provides account-linking and related features that may interact with third-party platforms and services.
 
-You agree to use MizuBot only for lawful purposes and in accordance with these Terms.
+You agree to use DrinstBot only for lawful purposes and in accordance with these Terms.
 
 ## 2. Account Connections
 
-Some MizuBot features may require you to connect a third-party account.
+Some DrinstBot features may require you to connect a third-party account.
 
-When you connect an account, you authorize MizuBot to access the information and functionality permitted by the authorization you grant.
+When you connect an account, you authorize DrinstBot to access the information and functionality permitted by the authorization you grant.
 
 You are responsible for ensuring that you have the right to authorize the account you connect.
 
@@ -24,29 +24,29 @@ You must not attempt to connect, access, or control another person's account wit
 
 ## 3. Third-Party Platform Terms
 
-Some MizuBot features may use APIs, OAuth, or other integrations provided by a third-party platform.
+Some DrinstBot features may use APIs, OAuth, or other integrations provided by third-party platforms, including Google and YouTube, TikTok, Instagram, and Twitch.
 
 When using a feature that interacts with a third-party platform, you must also follow that platform's applicable terms, policies, and requirements.
 
-This may include services such as Google, YouTube, Discord, Twitch, or other platforms, depending on the feature you use.
+The information and permissions involved depend on the feature and platform you use. For example, YouTube features may check subscription status, TikTok account linking may use a platform user identifier, and the Instagram streamer integration may use an Instagram-scoped ID.
 
 ## 4. OAuth Authorization
 
-MizuBot uses OAuth authorization to connect supported accounts.
+DrinstBot uses Google OAuth for YouTube features. Other integrations may use platform account identifiers for linking rather than stored OAuth credentials.
 
-MizuBot does not request or store your password for any connected platform.
+DrinstBot does not request or store your password for any connected platform.
 
-You may revoke MizuBot's authorization through the connected platform's account or authorization settings, where available.
+You may revoke DrinstBot's authorization through the connected platform's account or authorization settings, where available. YouTube OAuth tokens are stored to maintain that connection and allow later subscription or connection-validity checks, as described in our Privacy Policy.
 
 Revoking authorization may cause features that depend on the connection to stop working.
 
 ## 5. Rewards and Verification
 
-Certain MizuBot features may require verification of an account or activity on a supported third-party platform.
+Certain DrinstBot features may require verification of an account or activity on a supported third-party platform.
 
-Verification results may be used to determine whether a user qualifies for a particular MizuBot feature or reward.
+Verification results may be used to determine whether a user qualifies for a particular DrinstBot feature or reward.
 
-MizuBot does not guarantee that a particular reward, role, access level, or other benefit will always be available.
+DrinstBot does not guarantee that a particular reward, role, access level, or other benefit will always be available.
 
 We may reject or invalidate a verification when the required conditions are not met or when the verification cannot be completed reliably.
 
@@ -54,17 +54,17 @@ We may reject or invalidate a verification when the required conditions are not 
 
 You agree not to:
 
-* Attempt to gain unauthorized access to MizuBot or connected accounts.
+* Attempt to gain unauthorized access to DrinstBot or connected accounts.
 * Impersonate another person.
-* Abuse, exploit, or intentionally interfere with MizuBot.
+* Abuse, exploit, or intentionally interfere with DrinstBot.
 * Attempt to bypass verification or eligibility requirements.
-* Use MizuBot for unlawful purposes.
+* Use DrinstBot for unlawful purposes.
 * Attempt to obtain rewards or access through fraudulent means.
-* Interfere with the operation of third-party services used by MizuBot.
+* Interfere with the operation of third-party services used by DrinstBot.
 
 ## 7. Third-Party Services
 
-MizuBot may depend on third-party services, including Google, YouTube, Discord, Twitch, or other platforms.
+DrinstBot may depend on third-party services, including Google and YouTube, TikTok, Instagram, Twitch, or other platforms.
 
 We are not responsible for outages, changes, restrictions, API changes, account actions, or other issues caused by third-party services.
 
@@ -72,27 +72,27 @@ Third-party services are governed by their own terms and policies.
 
 ## 8. Availability
 
-MizuBot is provided on an "as available" basis.
+DrinstBot is provided on an "as available" basis.
 
 Features may be changed, suspended, or discontinued when necessary, including when a third-party service changes its API, policies, or availability.
 
 ## 9. Termination
 
-We may suspend or terminate access to MizuBot features when reasonably necessary, including in cases of abuse, fraud, unauthorized access attempts, or violations of these Terms.
+We may suspend or terminate access to DrinstBot features when reasonably necessary, including in cases of abuse, fraud, unauthorized access attempts, or violations of these Terms.
 
-You may stop using MizuBot or revoke connected account authorization at any time.
+You may stop using DrinstBot or revoke connected account authorization at any time.
 
 ## 10. Privacy
 
 Our handling of personal information and connected account data is described in our Privacy Policy:
 
-https://links.mizu.asia/privacy
+https://links.drinst.com/privacy
 
 ## 11. Changes to These Terms
 
-We may update these Terms when MizuBot's functionality or requirements change.
+We may update these Terms when DrinstBot's functionality or requirements change.
 
-Continued use of MizuBot after updated Terms are published constitutes acceptance of the updated Terms where permitted by applicable law.
+Continued use of DrinstBot after updated Terms are published constitutes acceptance of the updated Terms where permitted by applicable law.
 
 ## 12. Contact
 
@@ -100,4 +100,4 @@ If you have questions regarding these Terms, contact:
 
 **Email:** mizukashiinaa@gmail.com
 
-**Website:** https://links.mizu.asia/
+**Website:** https://links.drinst.com/
